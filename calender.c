@@ -90,13 +90,13 @@ void printCalender(int firstDay,int monthDays){
 	for(index = 0 ; index<firstDay; index++)
         printf("   ");
     
-    for(index = 1; index <=monthDays;index++) {
+	 for(index = 1; index <=monthDays;index++) {
         
 		printf("%3d", index);
-    	firstDay = (firstDay + 1) % 7;
+    		firstDay = (firstDay + 1) % 7;
 
-    	if(firstDay == 0)
-        	printf("\n");
+    		if(firstDay == 0)
+        		printf("\n");
     }
     printf("\n======================\n");
 }
